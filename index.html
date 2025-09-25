@@ -3,55 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Básico -->
+  <meta name="description" content="Descubre CoffeeStock: nuevos productos de café, recetas y promociones exclusivas. Suscríbete y vive la experiencia.">
+  <meta name="keywords" content="café, coffeestock, café de especialidad, productos de café, recetas de café, promociones de café">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph para redes sociales -->
+  <meta property="og:title" content="CoffeeStock - Nuevos Productos de Café">
+  <meta property="og:description" content="Descubre los nuevos lanzamientos de CoffeeStock y suscríbete para obtener recetas y promociones exclusivas.">
+  <meta property="og:image" content="https://tusitio.netlify.app/img/1.png">
+  <meta property="og:url" content="https://tusitio.netlify.app">
+  <meta property="og:type" content="website">
+
   <title>CoffeeStock</title>
-  <meta name="description" content="Descubre CoffeeStock: nuevos productos de café, suscríbete a nuestro newsletter y entérate de lanzamientos, recetas y promociones.">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
   <header>
-    <img src="img/logo.png" alt="Logo de la marca CoffeeStock" class="logo">
-    <nav class="botones" aria-label="Menú principal">
-      <a href="#nosotros">¿Quiénes somos?</a>
-      <a href="#productos">Productos</a>
-      <a href="#contacto">Contáctanos</a>
+    <h1>CoffeeStock</h1>
+    <nav class="botones">
+       <a href="#nosotros">¿Quiénes somos?</a>
+       <a href="#productos">Productos</a>
+       <a href="#contacto">Contáctanos</a>  
     </nav>
+
   </header>
 
   <main>
     <!-- Hero -->
     <section class="uno">
-      <img src="img/1.png" alt="Promoción de nuevos productos de café" class="imagen1">
+      <img src="img/1.png" alt="Imagen promocional de café CoffeeStock" class="imagen1">
       <div>
-        <h1>Nuevos</h1><br>
-        <h2>Productos</h2>
+        <h1>Nuevos</h1><br><h2>Productos</h2>
         <p>Suscríbete a nuestro newsletter para ser el<br>primero en enterarte de nuevos lanzamientos</p>
-        <button type="button" onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">¡Suscríbete!</button>
+        <button type="button" class="botones">¡Suscríbete!</button>
       </div>
     </section>
 
     <!-- División -->
     <section class="division" id="productos">
-      <h3>Explora los Productos</h3>
+      <h2>Explora los Productos</h2>
     </section>
 
     <!-- Productos -->
     <section class="dos">
-      <img src="img/prod1.png" alt="Bolsa de café en grano CoffeeStock">
-      <img src="img/prod2.png" alt="Café soluble CoffeeStock">
-      <img src="img/prod3.png" alt="Café descafeinado CoffeeStock">
-      <img src="img/prod4.png" alt="Cafeteras disponibles en CoffeeStock">
-      <img src="img/prod5.png" alt="Tazas personalizadas CoffeeStock">
-      <img src="img/prod6.png" alt="Métodos de preparación de café">
+      <img src="img/prod1.png" alt="Bolsa de café en grano CoffeeStock 250g">
+      <img src="img/prod2.png" alt="Paquete de café soluble CoffeeStock 200g">
+      <img src="img/prod3.png" alt="Paquete de café descafeinado CoffeeStock 250g">
+      <img src="img/prod4.png" alt="Cafetera CoffeeStock">
+      <img src="img/prod5.png" alt="Juego de tazas CoffeeStock">
+      <img src="img/prod6.png" alt="Métodos de preparación de café CoffeeStock">
       <img src="img/prod7.png" alt="Recetas con café CoffeeStock">
     </section>
 
     <!-- Newsletter -->
-    <section class="tres">
+    <section class="tres" id="newsletter">
       <div class="todo">
         <div class="text">
           <div class="sus">
@@ -61,7 +76,7 @@
           <h2>newsletter</h2>
           <p>Y mantente informado sobre nuestras novedades</p>
         </div>
-        <img src="img/sus.png" alt="Ilustración de tazas de café">
+        <img src="img/sus.png" alt="Tazas de café CoffeeStock">
       </div>
     </section>
 
@@ -69,10 +84,10 @@
     <section class="cuatro" id="contacto">
       <form>
         <label for="correo"><b>Correo</b></label>
-        <input type="email" id="correo" name="correo" placeholder="ejemplo@email.com" required>
+        <input type="email" id="correo" required>
 
         <label for="correo2"><b>Confirma tu correo</b></label>
-        <input type="email" id="correo2" name="correo2" placeholder="ejemplo@email.com" required>
+        <input type="email" id="correo2" required>
 
         <input type="submit" value="Enviar" class="boton-enviar">
       </form>
@@ -82,8 +97,8 @@
   <!-- Footer -->
   <footer>
     <h3 id="nosotros">¡Contáctanos!</h3>
-    <p><img src="img/ig.png" alt="Ícono de Instagram"> @coffeestock</p>
-    <p><img src="img/mail.png" alt="Ícono de correo electrónico"> clientes@coffeestock.com</p>
+    <p><a href="https://instagram.com/coffeestock" target="_blank" rel="noopener noreferrer"><img src="img/ig.png" alt="Instagram"> @coffeestock</a></p>
+    <p><img src="img/mail.png" alt="Correo electrónico"> clientes@coffeestock.com</p>
   </footer>
 </body>
 </html>
