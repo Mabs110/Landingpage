@@ -199,6 +199,9 @@ footer {
   background-color: #202020;
   color: #FFE853;
   padding: 20px;
+  a{
+    color:#FFE853
+  }
 }
 
 footer img {
@@ -219,7 +222,7 @@ footer img {
   }
 
   .uno img {
-    width: 250px;
+    width: 300px;
   }
 
   .dos img {
@@ -234,4 +237,25 @@ footer img {
   .cuatro input[type="email"] {
     width: 90%;
   }
+}
+
+header .botones {
+  display: flex;
+  gap: 10px; /* espacio entre botones */
+}
+
+header .botones a {
+  color: #FFFAD9;
+  background-color: #202020;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-family: "Manrope", sans-serif;
+  transition: background-color 0.3s;
+}
+
+header .botones a:hover {
+  background-color: #FFE853; /* efecto hover */
+  color: #202020;
+  border: #202020 solid;
 }
